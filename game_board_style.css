@@ -1,0 +1,114 @@
+#game-container {
+    width: 1115px;
+    height: 1000px;
+    padding: 10px;
+    background-color: #1a6b4c;
+    border-radius: 12px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    user-select:none;
+}
+
+.score-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    font-size: 30px;
+}
+
+h1, p {
+    margin: 0;
+}
+
+.all-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px
+}
+
+button {
+    height: 30px;
+
+    margin-top: 0px;
+    margin-right: 0px;
+
+    font-size: 20px;
+    color: rgba(255,255,255,1);
+    border: 1px solid black;
+    background: linear-gradient(to bottom, #525960, #171a1c);
+    border-radius: 8px;
+    box-shadow:     2px 2px 5px rgba(0,0,0,1),
+            inset 2px 2px 5px rgba(255,255,255,0.2);
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: inset 2px 2px 5px rgba(0,0,0,1);
+}
+
+button:hover {
+    color: rgba(255,255,255,1);
+    background: linear-gradient(to bottom,   #44454b,  #1b1b1d);    
+    border-radius: 8px;
+}
+
+.board-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.deck, .fundament, .desktop-column{
+    min-height: 250px;
+}
+
+#empty {
+    border: 1px dashed rgba(0,0,0,0);
+    background-color: rgba(255,255,255,0);
+}
+
+.deck-container {
+    display: flex;
+    gap: 10px;
+}
+
+.fundament-container {
+    display: flex;
+    gap: 10px;
+}
+
+.fundament, .deck, .desktop-column1 { 
+    width: 150px;
+    height: 250px;
+    border: 1px dashed rgba(0,0,0,0.5);
+    border-radius: 12px;
+    background-color: rgba(255,255,255,0.2);
+}
+
+.desktop-column {
+    position: relative;
+    width: 150px;    
+    height: 600px;
+}
+
+.desktop-container {
+    display: grid;
+    grid-template-columns: repeat(7, 150px);
+    grid-gap: 5px 10px;
+    margin-top: 20px;
+}
+
+.desktop-column .card {
+    position: absolute;
+}
+
+.deck .card {
+    position: absolute;
+}
+
+.fundament .card {
+    position: absolute;
+}
